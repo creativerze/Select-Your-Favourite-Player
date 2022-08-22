@@ -12,6 +12,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- header section start -->
@@ -34,7 +36,7 @@
       <div class="container my-5">
         <div class="row">
           <div class="col-md-9">
-            <div class="row">
+            <div class="row all-player">
               <!-- col  -->
               <div class="col-md-4 py-2">
                 <div class="card">
@@ -42,7 +44,10 @@
                   <div class="card-body text-center py-4">
                     <h4 class="card-title">Lionel Messi</h4>
                     <p class="card-text">90 Goals . 70 Assist</p>
-                    <button class="btn btn-primary fw-bold px-5 py-2">
+                    <button
+                      onclick="playerName(this)"
+                      class="btn btn-primary fw-bold px-5 py-2 player-btn"
+                    >
                       SELECT
                     </button>
                   </div>
@@ -56,7 +61,11 @@
                   <div class="card-body text-center py-4">
                     <h4 class="card-title">Neymar Jr</h4>
                     <p class="card-text">50 Goals . 40 Assist</p>
-                    <button href="#" class="btn btn-primary fw-bold px-5 py-2">
+                    <button
+                      onclick="playerName(this)"
+                      href="#"
+                      class="btn btn-primary fw-bold px-5 py-2 player-btn"
+                    >
                       SELECT
                     </button>
                   </div>
@@ -70,7 +79,10 @@
                   <div class="card-body text-center py-4">
                     <h4 class="card-title">Cristiano Ronaldo</h4>
                     <p class="card-text">70 Goals . 50 Assist</p>
-                    <button class="btn btn-primary fw-bold px-5 py-2">
+                    <button
+                      onclick="playerName(this)"
+                      class="btn btn-primary fw-bold px-5 py-2 player-btn"
+                    >
                       SELECT
                     </button>
                   </div>
@@ -84,7 +96,10 @@
                   <div class="card-body text-center py-4">
                     <h4 class="card-title">Di Maria</h4>
                     <p class="card-text">36 Goals . 35 Assist</p>
-                    <button class="btn btn-primary fw-bold px-5 py-2">
+                    <button
+                      onclick="playerName(this)"
+                      class="btn btn-primary fw-bold px-5 py-2 player-btn"
+                    >
                       SELECT
                     </button>
                   </div>
@@ -98,7 +113,10 @@
                   <div class="card-body text-center py-4">
                     <h4 class="card-title">Paulo Dybala</h4>
                     <p class="card-text">45 Goals . 40 Assist</p>
-                    <button class="btn btn-primary fw-bold px-5 py-2">
+                    <button
+                      onclick="playerName(this)"
+                      class="btn btn-primary fw-bold px-5 py-2 player-btn"
+                    >
                       SELECT
                     </button>
                   </div>
@@ -112,7 +130,10 @@
                   <div class="card-body text-center py-4">
                     <h4 class="card-title">Mesut Ozil</h4>
                     <p class="card-text">45 Goals . 55 Assist</p>
-                    <button href="#" class="btn btn-primary fw-bold px-5 py-2">
+                    <button
+                      onclick="playerName(this)"
+                      class="btn btn-primary fw-bold px-5 py-2 player-btn"
+                    >
                       SELECT
                     </button>
                   </div>
@@ -124,14 +145,17 @@
           <div class="col-md-3 py-2">
             <div class="row">
               <!-- col  -->
-              <div class="col-md-12 border border-3">
+              <div class="col-md-12 border border-3 own-style">
                 <h3 class="text-center py-2">Selected - V</h3>
-                <ul class="list-group list-group-numbered py-4">
-                  <li class="list-group-item ps-4">player-1</li>
+                <ul
+                  id="player-List"
+                  class="add-player list-group list-group-numbered py-4 fw-bold"
+                >
+                  <!-- <li class="list-group-item ps-4">player-1</li>
                   <li class="list-group-item ps-4">player-2</li>
                   <li class="list-group-item ps-4">player-3</li>
                   <li class="list-group-item ps-4">player-4</li>
-                  <li class="list-group-item ps-4">player-5</li>
+                  <li class="list-group-item ps-4">player-5</li> -->
                 </ul>
               </div>
               <!-- col  -->
@@ -139,26 +163,32 @@
               <div class="col-md-12 border border-3 my-4 ps-3">
                 <h3 class="text-center py-2">Budget</h3>
                 <div class="">
-                  <p class="mb-0">Per Player</p>
-                  <input type="text" />
+                  <p class="mb-0 fw-bold">Per Player</p>
+                  <input id="per-player" type="text" />
                   <br />
-                  <button class="btn btn-primary fw-bold px-5 py-2 my-3">
+                  <button
+                    id="calculate-btn"
+                    class="btn btn-primary fw-bold px-5 py-2 my-3"
+                  >
                     Calculate
                   </button>
-                  <p class="py-3">Player Expenses $<span>5000</span></p>
+                  <p class="py-3 fw-bold">Player Expenses $<span>5000</span></p>
 
-                  <p class="mb-0">Manager :</p>
-                  <input type="text" />
+                  <p class="mb-0 fw-bold">Manager :</p>
+                  <input id="manager-price" type="text" />
 
-                  <p class="pt-4 mb-0">Coach :</p>
-                  <input type="text" />
+                  <p class="pt-4 mb-0 fw-bold">Coach :</p>
+                  <input id="coach-price" type="text" />
                   <br />
-                  <button class="btn btn-primary fw-bold px-5 py-2 my-3">
+                  <button
+                    id="total-amount"
+                    class="btn btn-primary fw-bold px-5 py-2 my-3"
+                  >
                     Calculate Total
                   </button>
 
                   <p class="my-3 fw-bold text-center">
-                    Total $<span>11000</span>
+                    Total $<span id="total-amount-sum">11000</span>
                   </p>
                 </div>
               </div>
@@ -177,5 +207,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- js link  -->
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
