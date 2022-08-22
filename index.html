@@ -18,8 +18,8 @@
   <body>
     <!-- header section start -->
     <header>
-      <div class="container-fluid bg-dark text-light text-center py-5">
-        <h1 class="pt-5 pb-3">Select Your Favourite Player</h1>
+      <div class="container-fluid text-light text-center py-5 bg-image">
+        <h1 class="pt-5 pb-3 fw-bold fs-1">Select Your Favourite Player</h1>
         <p>
           Following football is a huge pastime for people around the world - so
           much so, that there are even <br />
@@ -146,7 +146,9 @@
             <div class="row">
               <!-- col  -->
               <div class="col-md-12 border border-3 own-style">
-                <h3 class="text-center py-2">Selected - V</h3>
+                <h3 class="text-center py-2 border-bottom border-3">
+                  Selected - V
+                </h3>
                 <ul
                   id="player-List"
                   class="add-player list-group list-group-numbered py-4 fw-bold"
@@ -172,7 +174,9 @@
                   >
                     Calculate
                   </button>
-                  <p class="py-3 fw-bold">Player Expenses $<span>5000</span></p>
+                  <p class="py-3 fw-bold">
+                    Player Expenses $<span id="total-player-cost">0</span>
+                  </p>
 
                   <p class="mb-0 fw-bold">Manager :</p>
                   <input id="manager-price" type="text" />
@@ -187,7 +191,7 @@
                     Calculate Total
                   </button>
 
-                  <p class="my-3 fw-bold text-center">
+                  <p class="my-3 fw-bold ps-2 fs-5">
                     Total $<span id="total-amount-sum">11000</span>
                   </p>
                 </div>

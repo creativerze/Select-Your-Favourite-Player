@@ -1,3 +1,11 @@
 .own-style{
   min-height: 325px;
 }
+.bg-image{
+  background-image: url("/images/bg-img-01.jpg");
+  /* background-color: #cccccc; */
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
