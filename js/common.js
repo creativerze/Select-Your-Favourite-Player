@@ -1,8 +1,8 @@
-function getIndexFieldById(indexFieldId) {
-  const getIndexField = document.getElementById(indexFieldId);
-  const indexFieldString = getIndexField.value;
-  const indexField = parseInt(indexFieldString);
-  return indexField;
+function getInputFieldById(inputFieldId) {
+  const getInputField = document.getElementById(inputFieldId);
+  const inputFieldString = getInputField.value;
+  const inputField = parseInt(inputFieldString);
+  return inputField;
 }
 
 function getTextFieldById(textFieldId, newAmount) {

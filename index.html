@@ -19,7 +19,9 @@
     <!-- header section start -->
     <header>
       <div class="container-fluid text-light text-center py-5 bg-image">
-        <h1 class="pt-5 pb-3 fw-bold fs-1">Select Your Favourite Player</h1>
+        <h1 class="pt-5 pb-3 fw-bold header-text">
+          Select Your Favourite Player
+        </h1>
         <p>
           Following football is a huge pastime for people around the world - so
           much so, that there are even <br />
@@ -32,13 +34,13 @@
     </header>
     <!-- header section end -->
     <!-- main section start -->
-    <main>
+    <main class="bg-light">
       <div class="container my-5">
         <div class="row">
           <div class="col-md-9">
             <div class="row all-player">
               <!-- col  -->
-              <div class="col-md-4 py-2">
+              <div class="col-md-6 col-lg-4 py-2">
                 <div class="card">
                   <img src="images/img-1.jpg" class="card-img-top" alt="..." />
                   <div class="card-body text-center py-4">
@@ -55,7 +57,7 @@
               </div>
               <!-- col  -->
               <!-- col  -->
-              <div class="col-md-4 py-2">
+              <div class="col-md-6 col-lg-4 py-2">
                 <div class="card">
                   <img src="images/img-2.jpg" class="card-img-top" alt="..." />
                   <div class="card-body text-center py-4">
@@ -73,7 +75,7 @@
               </div>
               <!-- col  -->
               <!-- col  -->
-              <div class="col-md-4 py-2">
+              <div class="col-md-6 col-lg-4 py-2">
                 <div class="card">
                   <img src="images/img-3.jpg" class="card-img-top" alt="..." />
                   <div class="card-body text-center py-4">
@@ -90,7 +92,7 @@
               </div>
               <!-- col  -->
               <!-- col  -->
-              <div class="col-md-4 py-2">
+              <div class="col-md-6 col-lg-4 py-2">
                 <div class="card">
                   <img src="images/img-4.jpg" class="card-img-top" alt="..." />
                   <div class="card-body text-center py-4">
@@ -107,7 +109,7 @@
               </div>
               <!-- col  -->
               <!-- col  -->
-              <div class="col-md-4 py-2">
+              <div class="col-md-6 col-lg-4 py-2">
                 <div class="card">
                   <img src="images/img-5.jpg" class="card-img-top" alt="..." />
                   <div class="card-body text-center py-4">
@@ -124,7 +126,7 @@
               </div>
               <!-- col  -->
               <!-- col  -->
-              <div class="col-md-4 py-2">
+              <div class="col-md-6 col-lg-4 py-2">
                 <div class="card">
                   <img src="images/img-6.jpg" class="card-img-top" alt="..." />
                   <div class="card-body text-center py-4">
@@ -145,13 +147,15 @@
           <div class="col-md-3 py-2">
             <div class="row">
               <!-- col  -->
-              <div class="col-md-12 border border-3 own-style">
-                <h3 class="text-center py-2 border-bottom border-3">
+              <div class="col-md-12 border border-4 own-style">
+                <h3
+                  class="text-center py-2 border-bottom border-3 get-text-color"
+                >
                   Selected - V
                 </h3>
                 <ul
                   id="player-List"
-                  class="add-player list-group list-group-numbered py-4 fw-bold"
+                  class="add-player list-group list-group-numbered py-4 fw-bold fs-5"
                 >
                   <!-- <li class="list-group-item ps-4">player-1</li>
                   <li class="list-group-item ps-4">player-2</li>
@@ -162,15 +166,19 @@
               </div>
               <!-- col  -->
               <!-- col  -->
-              <div class="col-md-12 border border-3 my-4 ps-3">
-                <h3 class="text-center py-2">Budget</h3>
-                <div class="">
+              <div class="col-md-12 border border-4 my-4 ps-3">
+                <h3
+                  class="text-center pt-3 pb-2 border-bottom border-3 get-text-color"
+                >
+                  Budget
+                </h3>
+                <div class="pt-3">
                   <p class="mb-0 fw-bold">Per Player</p>
                   <input id="per-player" type="text" />
                   <br />
                   <button
                     id="calculate-btn"
-                    class="btn btn-primary fw-bold px-5 py-2 my-3"
+                    class="btn btn-primary fw-bold px-5 py-2 my-3 btn-calculate"
                   >
                     Calculate
                   </button>
@@ -186,13 +194,13 @@
                   <br />
                   <button
                     id="total-amount"
-                    class="btn btn-primary fw-bold px-5 py-2 my-3"
+                    class="btn btn-primary fw-bold px-5 py-2 my-3 btn-calculate"
                   >
                     Calculate Total
                   </button>
 
-                  <p class="my-3 fw-bold ps-2 fs-5">
-                    Total $<span id="total-amount-sum">11000</span>
+                  <p class="py-3 fw-bold ps-2 fs-5">
+                    Total : $<span id="total-amount-sum">0</span>
                   </p>
                 </div>
               </div>
@@ -202,9 +210,19 @@
         </div>
       </div>
     </main>
-
     <!-- main section end -->
-
+    <!-- footer section start  -->
+    <footer>
+      <section>
+        <div
+          class="container-Fluid mt-t py-5 footer-area text-center text-light"
+        >
+          <h3 class="py-2">CreatiVerze</h3>
+          <p>Copyright © 2022 CreatiVerze.com</p>
+        </div>
+      </section>
+    </footer>
+    <!-- footer section end  -->
     <!-- bootstrap js  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

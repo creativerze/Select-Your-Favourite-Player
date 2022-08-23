@@ -1,11 +1,33 @@
+.header-text{
+  font-size: 50px;
+}
+
 .own-style{
   min-height: 325px;
 }
 .bg-image{
   background-image: url("/images/bg-img-01.jpg");
-  /* background-color: #cccccc; */
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer-area{
+  background-color: #04293A;
+  /* color: #0377ad; */
+}
+
+.player-btn{
+  background-color: #064663;
+  border: 0;
+}
+
+.get-text-color{
+  color: #064663;
+}
+
+.btn-calculate{
+  background-color: #064663;
+  border: 0;
 }
